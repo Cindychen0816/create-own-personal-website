@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page of Xinran Chen</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css"  href="mystyle.css" media="screen, projection"/>
+	<script type="text/javascript">
+		function startTime(){
+			var today=new Date()
+			var h=today.getHours()
+			var m=today.getMinutes()
+			var s=today.getSeconds()
+			m=checkTime(m)
+			s=checkTime(s)
+			document.getElementById('txt').innerHTML=h+":"+m+":"+s
+			t=setTimeout('startTime()',500)
+		}
+
+		function checkTime(i){
+			if (i<10) 
+  			{i="0" + i}
+  			return i
+		}
+	</script>
+</head>
+<body bgcolor="WhiteSmoke" onload="startTime()">
+	<img id="headerImage" src="image/head.png"  alt="head" />
+	<div class="nav">
+		<nav>
+			<table frame="below">
+			  <tr>
+				<th><ul align="center" title="one">
+				    <li><a href="index.html">Home</a></li>
+					<li><a href="education.html">Education</a></li>
+					<li><a href="experience.html">Experience</a></li>
+					<li><a href="interests.html">Interests</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul></th>
+			  </tr>
+			</table>
+		</nav>
+	</div>
+
+	<h1 align="center">Education</h1>
+	<p><b>University of Pittsburgh</b>Master Science of Information Science<br/>
+        <small>Sep 2017- (expected)Apr 2019</small><br/>
+	    Graduate Course: Algorithm Design, Database Management, Information Storage and Retrieval.<br/>
+		On-going courses: Information Visualization, Web Technology, Data Analysis.</p>
+	<p><b>Nankai University(NKU), China</b>B.S in Software Engineering<br/>
+        <small>Sep 2012- June 2017</small><br/>
+		Undergraduate Courses: Data Structure and Algorithmic Design, Java Technology in Depth, Software Testing and Evaluation, Computer Networking, Object-oriented Software Methodology.</p>
+    <div id="txt"></div>
+    <div id="footer">
+        Xinran Chen   xic96
+    </div>
+</body>
+</html>

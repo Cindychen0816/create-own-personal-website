@@ -1,0 +1,114 @@
+#headerImage {
+	margin-top: none;
+	width: 1320px;
+	align-self: center
+}
+
+ul[title="one"]{
+list-style-type:none;
+margin:0 auto;
+padding:0;
+overflow:hidden;
+text-align:center;
+}
+li
+{
+float:left;
+}
+.nav a:link, .nav a:visited
+{
+display:block;
+width:120px;
+font-weight:bold;
+color:#FFFFFF;
+background-color:#bebebe;
+text-align:center;
+padding:4px;
+text-decoration:none;
+text-transform:uppercase;
+}
+.nav a:hover, .nav a:active
+{
+background-color:green;
+text-decoration: underline;
+}
+
+body {	
+	font: 1.2em Palantino, Times, serif;
+}
+
+/* make header fonts san serif to contrast with body font, adjust header sizes as well */
+h1{	
+	margin-top: 3em;
+	color:gray;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.2;
+}
+p{
+	color:gray;
+	font-family:Arial, Helvetica, sans-self;
+	line-height: 1.2;
+	padding-left: 5em;
+	padding-top: 3em;
+	padding-right: 5em;
+}
+
+.int{
+	color:gray;
+	font-family:Arial, Helvetica, sans-self;
+	line-height: 1;
+	padding-left: 2em;
+	padding-top: 3em;
+	padding-right: 5em;
+}
+
+.email a:link, .email a:visited{
+	color:blue;
+	font-family:Arial, Helvetica, sans-self;
+	line-height: 1.2;
+	padding-top: 1em;
+	padding-right: 5em;
+}
+.email a:hover, .email a:active{
+	color:purple;
+	font-family:Arial, Helvetica, sans-self;
+	line-height: 1.2;
+	padding-top: 1em;
+	padding-right: 5em;
+}
+
+#footer {
+    background-color:whitesmoke;
+    color:gray;
+    clear:both;
+    text-align:right;
+    padding:5px; 
+    padding-bottom: none;
+}
+
+#txt{
+	color:gray;
+	font-family:Arial, Helvetica, sans-self;
+	line-height: 1.2;
+	padding-left: 2em;
+	padding-top: 3em;
+	padding-right: 5em;
+}
+
+.name{
+	color:gray;
+	font-family:Arial, Helvetica, sans-self;
+	line-height: 1.2;
+	padding-left: 5em;
+	padding-top: 3em;
+	padding-right: 5em;
+}
+
+
+
+
+
+
+
+
+

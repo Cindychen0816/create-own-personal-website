@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page of Xinran Chen</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css"  href="mystyle.css" media="screen, projection"/>
+	<script type="text/javascript">
+		function startTime(){
+			var today=new Date()
+			var h=today.getHours()
+			var m=today.getMinutes()
+			var s=today.getSeconds()
+			m=checkTime(m)
+			s=checkTime(s)
+			document.getElementById('txt').innerHTML=h+":"+m+":"+s
+			t=setTimeout('startTime()',500)
+		}
+
+		function checkTime(i){
+			if (i<10) 
+  			{i="0" + i}
+  			return i
+		}
+	</script>
+</head>
+<body bgcolor="WhiteSmoke" onload="startTime()">
+	<img id="headerImage" src="image/head.png"  alt="head" />
+	<div class="nav">
+	    <nav>
+			<table frame="below">
+			  	<tr>
+					<th><ul align="center" title="one">
+				    	<li><a href="index.html">Home</a></li>
+						<li><a href="education.html">Education</a></li>
+						<li><a href="experience.html">Experience</a></li>
+						<li><a href="interests.html">Interests</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul></th>
+			  	</tr>
+			</table>
+		</nav>
+	</div>
+		
+
+    
+	<h1 align="center">Experience</h1>
+	<p><b><big>Internship Experience</big></b><br/><br/>
+        <i><b>Hong Kong Prudential Assurance Co. Ltd.</b></i><small>&nbsp;July 2014- Aug 2014</small><br/>
+	    Developed the promotion plan for a financial product, including the demonstration of fund plan.<br/>
+		Participated in writing business plan for a client.<br/><br/>
+		<i>Shenzhen Ricequant Science and Technology Co. Ltd.</i><small>&nbsp;May 2018- July 2018</small><br/>
+		Using Python to analyze and modify data of stock, index bond and option contract, clean and drop duplication of data. Using pandas and numpy expertly.<br/>
+		Having an in-depth understanding of .csv, .hdf5 and .bcolz file format.</p>
+	<p><b><big>Research Experience</big></b><br/><br/>
+        <i><b>Development of R-based Co-expressed Gene Enrichment Analysis Package</b></i><small>&nbsp;Feb 2016- May 2016</small><br/>
+		Analyzed data processing and tagging algorithms and the enrichment region analysis algorithms based on Fisher Exact Test.<br/>
+		Translated the results to Wig format and output it.<br/><br/>
+		<i><b>Sales Company with E-Commerce Design</b></i><small>&nbsp;Jan 2018- Apr 2018</small><br/>
+		Designed E-Commerce by MySQL and PHP, automated the functions of  a sales company. Customer can use it to sign up, sign in, view shopping history, find the goods using key words and add to shopping cart to checkout.<br/>
+		Product manager and online salesperson can view and change the information of customers, discount and inventory.<br/><br/>
+		<i><b>Improvement of Food Information Retrieval</b></i><small>&nbsp;Jan 2018- Apr 2018</small><br/>
+		Using Java to participate in the improvement of information retrieval website by Pseudo Relevance Feedback.<br/>
+		Customer can type vegetables names, choose evaluation rating to find foods. Foods are ranked by relevance.=
+		</p>
+    <div id="txt"></div>
+    <div id="footer">
+        Xinran Chen   xic96
+    </div>
+</body>
+</html>
