@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page of Xinran Chen</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css"  href="mystyle.css" media="screen, projection"/>
+	<script type="text/javascript">
+		function startTime(){
+			var today=new Date()
+			var h=today.getHours()
+			var m=today.getMinutes()
+			var s=today.getSeconds()
+			m=checkTime(m)
+			s=checkTime(s)
+			document.getElementById('txt').innerHTML=h+":"+m+":"+s
+			t=setTimeout('startTime()',500)
+		}
+
+		function checkTime(i){
+			if (i<10) 
+  			{i="0" + i}
+  			return i
+		}
+	</script>
+</head>
+<body bgcolor="WhiteSmoke" onload="startTime()">
+	<img id="headerImage" src="image/head.png" align="center" alt="head" />
+	<div class="nav">
+		<nav>
+			<table frame="below">
+			  <tr>
+			    <th><ul align="center" title="one">
+				    <li><a href="index.html">Home</a></li>
+					<li><a href="education.html">Education</a></li>
+					<li><a href="experience.html">Experience</a></li>
+					<li><a href="interests.html">Interests</a></li>
+					<li><a href="contact.html">Contact</a></li>
+			    </ul></th>
+			  </tr>
+			</table>
+		</nav>
+	</div>
+	<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="200">
+    	<g transform="translate(50,100)">
+        	<text id="TextElement" x="400" y="0" style="font-family:Arial;font-size: 24;" stroke="gray" fill="gray">
+            Welcome!
+            <animateMotion path="M 100 0 Q 100 200 100 0Z" dur="5s" fill="freeze"></animateMotion>
+            <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1" to="2" additive="sum" dur="4s" fill="freeze"></animateTransform>
+        	</text>
+    	</g>
+    	Sorry, your browser does not support inline SVG.
+	</svg>
+	<img src="image/myself.jpeg" alt="me" width="200" height="190" align ="left"/>
+	<p>My name is Xinran Chen, a master student of University of Pittsburgh. My major is Information Science and I study in School of Computing and Information. This is my second year in Pittsburgh. I am very glad to live in Pittsburgh, because it is really a suitable city to live in. And I am interested in database and web technology.
+	</p>
+    <div id="txt"></div>
+    <div id="footer">
+        Xinran Chen   xic96
+    </div>
+</body>
+</html>
